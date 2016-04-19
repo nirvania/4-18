@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{margin:0;padding:0;background:#c1c1c1;}
+a{text-decoration:none;}
+.box{width:688px;margin:100px auto;}
+.box:after{content:'';display:block;clear:both;}
+.cata{width:150px;height:60px;border-radius:8px;float:left;display:block;position:relative;overflow:hidden;z-index:5;margin:0 10px;}
+.cover{width:180px;height:80px;border-radius:8px;color:#fff;font:bold 30px 'microsoft yahei';line-height:80px;text-align:center;position:absolute;top:50%;left:50%;margin-left:-90px;margin-top:-40px;transition:0.5s all ease;background:#999;text-shadow:2px 2px 2px #000}
+.bg{width:200px;height:100px;position:absolute;left:50%;top:50%;margin-left:-100px;margin-top:-50px;background-image:url(img/1.jpg);}
+.bg1{background-position:-10px -10px;}
+.bg2{background-position:-210px -10px;}
+.bg3{background-position:-410px -10px;}
+.bg4{background-position:-610px -10px;}
+.cata:hover .cover{transform:translate(0,-180px)}
+.shadow{width:150px;height:60px;border-radius:8px;position:absolute;top:0;left:0;box-shadow:inset 2px 2px 2px #000;background:transparent;}
+</style>
+</head>
+
+<body>
+<div id="box" class="box">
+	<a href="javascript:;" class="cata">
+        <div class="bg bg1"></div>
+		<div class="cover">About</div>
+        <em class="shadow"></em>
+    </a>
+	<a href="javascript:;" class="cata">
+        <div class="bg bg2"></div>
+		<div class="cover">Contact</div>
+        <em class="shadow"></em>
+
+    </a>
+	<a href="javascript:;" class="cata">
+        <div class="bg bg3"></div>
+		<div class="cover">User</div>        
+        <em class="shadow"></em>
+    </a>
+	<a href="javascript:;" class="cata">
+        <div class="bg bg4"></div>
+		<div class="cover">About</div>
+        <em class="shadow"></em>
+    </a>
+</div>
+</body>
+</html>

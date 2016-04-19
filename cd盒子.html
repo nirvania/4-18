@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{margin:0;padding:0;}
+.clear{content:'';display:block;clear:both;}
+.box{width:500px;height:100px;margin:300px auto;}
+.case{position:relative;float:left;width:100px;height:100px;margin-right:20px;}
+img{vertical-align:top;border:none;width:100%;height:100%;position:absolute;top:0;left:0;transition:0.7s all ease;}
+.cd{width:100%;height:100%;background:url(img/cd.png);position:absolute;top:0;left:0;background-size:100px 100px;transition:0.5s all ease;}
+.case:hover .cd{transform:translate(0,-20px) rotate(-180deg);}
+.case:hover img{transform:translate(0,20px)}
+</style>
+</head>
+
+<body>
+<div class="box clear">
+	<a href="javascript:;" class="case">
+    	<div class="cd"></div><img src="img/img_01.jpg">
+    </a>
+    <a href="javascript:;" class="case">
+    	<div class="cd"></div><img src="img/img_01.jpg">
+    </a>
+	<a href="javascript:;" class="case">
+    	<div class="cd"></div><img src="img/img_01.jpg">
+    </a>
+	<a href="javascript:;" class="case">
+    	<div class="cd"></div><img src="img/img_01.jpg">
+    </a>
+
+</div>
+</body>
+</html>

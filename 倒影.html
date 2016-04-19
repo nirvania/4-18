@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+body{background:#000;}
+*{margin:0;padding:0;list-style:none;}
+img{width:100%;border:none;}
+#ul1{width:1300px;height:200px;}
+#ul1:after{content:'';display:block;clear:both;}
+li{width:200px;height:200px;margin-right:10px;float:left;position:relative;}
+.ref{width:200px;height:200px;position:absolute;top:230px;left:0;transform:scale(1,-1);-webkit-mask:-webkit-linear-gradient(rgba(0,0,0,0) 50%,rgba(0,0,0,0.5))}
+</style>
+<script>
+window.onload=function(){
+	var oUl1=document.querySelector('#ul1');
+	var aImg=document.querySelectorAll('#ul1 img');
+	
+	for(var i=0;i<aImg.length;i++){
+		var oRef=document.createElement('div');
+		oRef.style.background='url('+aImg[i].src+')';
+		oRef.style.backgroundSize='cover';
+		oRef.className='ref';
+		aImg[i].parentNode.appendChild(oRef);
+	}
+	
+};
+</script>
+</head>
+
+<body>
+<ul id="ul1">
+    <li><img src="img/m1.jpg" /></li>
+    <li><img src="img/m2.jpg" /></li>
+    <li><img src="img/m3.jpg" /></li>
+    <li><img src="img/m4.jpg" /></li>
+    <li><img src="img/m5.jpg" /></li>
+    <li><img src="img/m6.jpg" /></li>
+</ul>
+</body>
+</html>
